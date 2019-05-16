@@ -22,7 +22,7 @@ function getScore() {
     
     
     let yourType;
-    let winningScore = 0;
+    let winningScore = 1;
     
 
     //match every expression's value to a 'case', which makes the statments run that are associated with the 'case' and statements in the following case. 
