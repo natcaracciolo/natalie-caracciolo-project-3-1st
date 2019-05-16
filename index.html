@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What is Your 80's Theme Song?</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>What is your 1980's theme song?</h1>
+            <p>Ever wondered what your ideal 80's song is? Probably not. Now that you're here, why not find out? Check one answer that applies to you in each section, and you will be given an 80's track to jam out to today!</p>
+        </header>
+
+        <form id="my-quiz" onsubmit="return false;">
+            <fieldset class="question1">
+                <div class="title">
+                    <h2>How do your friends describe you?</h2>
+                </div>
+
+                <div class="options">
+                    <label><input type="radio" name="q1" value="joyDivision"> angsty</label>
+                    <label><input type="radio" name="q1" value="talkingHeads"> quirky</label>
+                    <label><input type="radio" name="q1" value="pointerSisters"> happy all the time</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="question2">
+                <div class="title">
+                    <h2>How do you feel about your current life situation?</h2>
+                </div>
+
+                <div class="options"> 
+                    <label><input type="radio" name="q2" value="joyDivision"> getting out of hand</label>
+                    <label><input type="radio" name="q2" value="talkingHeads"> how did i get here</label>
+                    <label><input type="radio" name="q2" value="pointerSisters"> cant complain</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="question3">
+                <div class="title">
+                    <h2>another question</h2>
+                </div>
+
+                <div class="options">
+                    <label><input type="radio" name="q3" value="joyDivision">joy division </label>
+                    <label><input type="radio" name="q3" value="talkingHeads"> talking heads</label>
+                    <label><input type="radio" name="q3" value="pointerSisters">pointer sisters</label>
+                </div>
+            </fieldset>
+            <div class="btn">
+                <button id="submit-button">Check my score!</button>
+            </div>
+        </form>
+
+        <section class="results">
+            <div class="quiz-answer">
+                
+            </div>
+        </section>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
