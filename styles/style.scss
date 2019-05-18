@@ -20,13 +20,12 @@
 body {
     background: #222222;
     color: #FAFAFA;
-    font-family: teko;
+    font-family: 'teko';
 }
 
 header, .results {
     height: 100vh;
     
-
 }
 
 header h1,
@@ -36,22 +35,27 @@ header h1,
     font-size: 3rem;
 }
 
-p {
+header p {
     font-size: 2rem;
+    padding-top: 2%;
 }
 
-.radio-button-label {
-    font-size: 2rem;
+.results p {
+    padding-top:25%;
+    font-size: 2.5rem;
 }
 
-h2 {
+
+legend {
     font-size: 3rem;
-    padding-top: 30%;
+    padding-top: 20%;
+    padding-bottom: 5%;
 }
 
 fieldset {
     height: 100vh;
-    // border: 1px solid red;
+    border: none;
+
 }
 
 main {
@@ -60,8 +64,7 @@ main {
 
 
 
-// 'QUESTIONS AND OPTIONS' styles
-
+// 'QUESTIONS AND OPTIONS' (radio button) styles
 
 
 .options {
@@ -70,21 +73,21 @@ main {
 
 }
 
-
 .radio-button {
     opacity: 0;
     position: absolute;   
 }
 .radio-button, .radio-button-label {
     display: inline-block;
-    margin: 5px;
-    
+    margin: 5px;  
 }
 
 .radio-button-label {
     position: relative;
-    
+    font-size: 2rem;
+    padding: 1px 0;  
 }
+
 .radio-button + .radio-button-label:before {
     content: '';
     background: #ff48c4;
@@ -93,10 +96,6 @@ main {
     height: 30px;
     margin-right: 10px;
     text-align: center;
-}
-
-
-.radio-button + .radio-button-label:before {
     border-radius: 50%;
 }
 

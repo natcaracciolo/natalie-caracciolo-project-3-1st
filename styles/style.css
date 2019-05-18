@@ -194,7 +194,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   background: #222222;
   color: #FAFAFA;
-  font-family: teko;
+  font-family: 'teko';
 }
 
 header, .results {
@@ -207,21 +207,25 @@ header h1 {
   font-size: 3rem;
 }
 
-p {
+header p {
   font-size: 2rem;
+  padding-top: 2%;
 }
 
-.radio-button-label {
-  font-size: 2rem;
+.results p {
+  padding-top: 25%;
+  font-size: 2.5rem;
 }
 
-h2 {
+legend {
   font-size: 3rem;
-  padding-top: 30%;
+  padding-top: 20%;
+  padding-bottom: 5%;
 }
 
 fieldset {
   height: 100vh;
+  border: none;
 }
 
 main {
@@ -250,6 +254,8 @@ main {
 
 .radio-button-label {
   position: relative;
+  font-size: 2rem;
+  padding: 1px 0;
 }
 
 .radio-button + .radio-button-label:before {
@@ -260,9 +266,6 @@ main {
   height: 30px;
   margin-right: 10px;
   text-align: center;
-}
-
-.radio-button + .radio-button-label:before {
   border-radius: 50%;
 }
 

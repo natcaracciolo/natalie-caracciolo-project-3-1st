@@ -11,15 +11,19 @@ $(document).ready(function(){
 
 }) 
 
-    $(".button1").click(function() {
+
+function createScroller(clickElement, target) {
+    $(clickElement).click(function() {
         $('html,body').animate({
-            scrollTop: $("form").offset().top},
-             'slow');
+            scrollTop: $(target).offset().top
+        }, 1000);
+    });
+}
 
-          
-
-});
-
+createScroller('.button1', 'form')
+createScroller('.question1', '.question2')
+createScroller('.question2', '.question3')
+createScroller('.submit-button', '.results')
 
 function getScore() {
     const form = document.querySelector("#quiz");
@@ -68,8 +72,9 @@ function getScore() {
         $('.quiz-answer').empty()
         $('.quiz-answer').append(`<p>Your 80's jam is: ${yourType}</p>`)
     
-
 }
+
+
 
 
 
