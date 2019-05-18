@@ -1,8 +1,155 @@
+
+@font-face {
+
+    src: url('fonts/sabo-regular-webfont.ttf');
+    font-family: 'sabo';
+    font-style: normal;
+    font-weight: 100;
+}
+
 @import "partials/normalize";
 
+// overall styles
+
+.wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+
+body {
+    background: #222222;
+    color: #FAFAFA;
+    font-family: teko;
+}
+
+header, .results {
+    height: 100vh;
+    
+
+}
+
+header h1,
+{
+    padding-top: 20%;
+    font-family: 'teko';
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.radio-button-label {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-top: 30%;
+}
+
+fieldset {
+    height: 100vh;
+    // border: 1px solid red;
+}
+
+main {
+    letter-spacing: 0.5px;
+}
 
 
 
+// 'QUESTIONS AND OPTIONS' styles
 
+
+
+.options {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.radio-button {
+    opacity: 0;
+    position: absolute;   
+}
+.radio-button, .radio-button-label {
+    display: inline-block;
+    margin: 5px;
+    
+}
+
+.radio-button-label {
+    position: relative;
+    
+}
+.radio-button + .radio-button-label:before {
+    content: '';
+    background: #ff48c4;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+.radio-button + .radio-button-label:before {
+    border-radius: 50%;
+}
+
+.radio-button:checked + .radio-button-label:after {
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    position: absolute;
+    color: #bbb;
+    left: 1px;
+
+}
+// focus style
+
+.radio-button:focus + .radio-button-label {
+  outline: 1px solid #ddd;
+}
+
+
+// BUTTON STYLES
+
+.submit-button {
+    display:flex;
+   margin-top: 4rem;
+}
+
+
+button,
+.submit-button {
+    padding: 15px 33px;
+    font-size: 2rem;
+    text-align: center;
+    outline: none;
+    background-color: #ff48c4;
+    border: none;
+    border-radius: 15px;
+    width: 25%; 
+  }
+  
+  button:hover,
+  .submit-button:hover {
+      background-color:#ff48c4;
+    }
+  
+  button:active,
+  .submit-button:active {
+    background-color: #ff48c4;
+    transform: translateY(4px);
+  }
+
+  .quiz-answer {
+      text-align: center;
+  }
 
 
